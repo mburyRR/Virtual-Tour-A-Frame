@@ -1,10 +1,10 @@
-## MGR M.Bury - AEI Virtual Tour - A-Frame
+## Virtual-Tour-A-Frame
 
-Master's project of an application built on the basis of the A-Frame framework, which enables a virtual tour of the AEII faculty of the Silesian University of Technology.
+Master's project of an application built on the basis of the A-Frame framework, which enables a virtual tour of the AEI faculty of the Silesian University of Technology.
 
 **Demo**
 
-*here_github_pages_url*
+---
 
 **Running App**
 
