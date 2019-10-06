@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MGR M.Bury - A-Frame</title>
+    <meta name="description" content="MGR - Virtual Tour - A-Frame">
+    <meta name="author" content="Marcin Bury">
+    <script src="./js/libraries/aframe.min.js"></script>
+    <script src="./js/libraries/aframe-animation-component.min.js"></script>
+    <script src="./js/libraries/aframe-look-at-component.min.js"></script>
+    <script src="./js/libraries/aframe-asset-on-demand-component.min.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <a-scene vr-mode-ui="enabled: true">
+      <a-assets>
+        <img id="scene1" src="./img/p0_0.jpg"/> 
+        <img id="hotspot" src="./img/box.png"/>
+      </a-assets>
+      
+      <a-entity id="spots" hotspots></a-entity>
+      
+      <a-sky id="skybox" src="#scene1"></a-sky>
+      
+      <a-entity id="cam" camera position="0 1.6 0" look-controls>
+        <a-entity cursor="fuse:true; fuseTimeout:1500"
+          geometry="primitive:ring; radiusInner:0.01; radiusOuter:0.02"
+          position="0 0 -1.4"
+          material="shader:flat; color:#84ff68"
+          animation__mouseenter="property:scale; to:3 3 3; startEvents:mouseenter; endEvents:mouseleave; dir:reverse; dur:1500; loop:1">
+        </a-entity>
+      </a-entity>
+      
+    </a-scene>
+
+    <script src="./js/zoom.js"></script>
+  </body>
+</html>
