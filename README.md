@@ -4,7 +4,7 @@ Master's project of an application built on the basis of the A-Frame framework, 
 
 **Demo**
 
----
+https://mburyrr.github.io/Virtual-Tour-A-Frame/
 
 **Running App**
 
